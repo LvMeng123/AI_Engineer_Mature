@@ -1,0 +1,47 @@
+2025-05-25 20:32:08,073 - INFO - --- 日志系统已启动 ---
+2025-05-25 20:32:08,097 - INFO - 随机种子已设置为: 42
+2025-05-25 20:32:08,098 - INFO - 当前使用的设备: cuda
+2025-05-25 20:32:08,098 - INFO - 开始从 'student_performance.csv' 加载数据...
+2025-05-25 20:32:08,102 - INFO - 原始数据共有 200 行, 5 列。
+2025-05-25 20:32:08,102 - INFO - 数据列名: ['hours_studied', 'previous_score', 'attendance_rate', 'iq_score', 'passed_exam']
+2025-05-25 20:32:08,105 - INFO - 数值型特征: ['hours_studied', 'previous_score', 'attendance_rate', 'iq_score']
+2025-05-25 20:32:08,107 - INFO - 数值特征已进行标准化处理。
+2025-05-25 20:32:08,108 - INFO - 数据集分割完成: 训练集 160 条, 验证集 40 条。
+2025-05-25 20:32:08,108 - INFO - DataLoader 已创建。
+2025-05-25 20:32:08,109 - INFO - MLP 模型已初始化: 输入维度=4, 隐藏层1=64, 隐藏层2=32, 输出维度=1
+2025-05-25 20:32:09,129 - INFO - --- 开始训练 ---
+2025-05-25 20:32:09,355 - INFO - Epoch 1/30 | Train Loss: 0.6169, Train Acc: 0.7875 | Val Loss: 0.6397, Val Acc: 0.6750, Val AUC: 0.5413 | 耗时: 0.23s
+2025-05-25 20:32:09,358 - INFO - 发现更好的模型 (Val AUC: 0.5413), 已保存到 'best_student_mlp_model.pth'
+2025-05-25 20:32:09,386 - INFO - Epoch 2/30 | Train Loss: 0.5728, Train Acc: 0.7937 | Val Loss: 0.6309, Val Acc: 0.6750, Val AUC: 0.5299 | 耗时: 0.03s
+2025-05-25 20:32:09,412 - INFO - Epoch 3/30 | Train Loss: 0.5299, Train Acc: 0.7937 | Val Loss: 0.6336, Val Acc: 0.6750, Val AUC: 0.5043 | 耗时: 0.03s
+2025-05-25 20:32:09,438 - INFO - Epoch 4/30 | Train Loss: 0.5154, Train Acc: 0.7937 | Val Loss: 0.6478, Val Acc: 0.6750, Val AUC: 0.4900 | 耗时: 0.03s
+2025-05-25 20:32:09,463 - INFO - Epoch 5/30 | Train Loss: 0.4857, Train Acc: 0.7937 | Val Loss: 0.6673, Val Acc: 0.6750, Val AUC: 0.4986 | 耗时: 0.02s
+2025-05-25 20:32:09,489 - INFO - Epoch 6/30 | Train Loss: 0.4774, Train Acc: 0.7937 | Val Loss: 0.6824, Val Acc: 0.6750, Val AUC: 0.4929 | 耗时: 0.03s
+2025-05-25 20:32:09,514 - INFO - Epoch 7/30 | Train Loss: 0.4617, Train Acc: 0.7937 | Val Loss: 0.6928, Val Acc: 0.6750, Val AUC: 0.5043 | 耗时: 0.03s
+2025-05-25 20:32:09,537 - INFO - Epoch 8/30 | Train Loss: 0.4563, Train Acc: 0.7937 | Val Loss: 0.7025, Val Acc: 0.6750, Val AUC: 0.5299 | 耗时: 0.02s
+2025-05-25 20:32:09,564 - INFO - Epoch 9/30 | Train Loss: 0.4559, Train Acc: 0.7937 | Val Loss: 0.7080, Val Acc: 0.6750, Val AUC: 0.5242 | 耗时: 0.03s
+2025-05-25 20:32:09,591 - INFO - Epoch 10/30 | Train Loss: 0.4408, Train Acc: 0.7937 | Val Loss: 0.7192, Val Acc: 0.6750, Val AUC: 0.5271 | 耗时: 0.03s
+2025-05-25 20:32:09,620 - INFO - Epoch 11/30 | Train Loss: 0.4388, Train Acc: 0.7937 | Val Loss: 0.7319, Val Acc: 0.6750, Val AUC: 0.5328 | 耗时: 0.03s
+2025-05-25 20:32:09,647 - INFO - Epoch 12/30 | Train Loss: 0.4406, Train Acc: 0.8000 | Val Loss: 0.7381, Val Acc: 0.6750, Val AUC: 0.5356 | 耗时: 0.03s
+2025-05-25 20:32:09,674 - INFO - Epoch 13/30 | Train Loss: 0.4406, Train Acc: 0.8063 | Val Loss: 0.7337, Val Acc: 0.6500, Val AUC: 0.5413 | 耗时: 0.03s
+2025-05-25 20:32:09,701 - INFO - Epoch 14/30 | Train Loss: 0.4214, Train Acc: 0.8000 | Val Loss: 0.7556, Val Acc: 0.6500, Val AUC: 0.5328 | 耗时: 0.03s
+2025-05-25 20:32:09,726 - INFO - Epoch 15/30 | Train Loss: 0.4274, Train Acc: 0.8000 | Val Loss: 0.7694, Val Acc: 0.6500, Val AUC: 0.5413 | 耗时: 0.02s
+2025-05-25 20:32:09,752 - INFO - Epoch 16/30 | Train Loss: 0.4139, Train Acc: 0.8187 | Val Loss: 0.7710, Val Acc: 0.6500, Val AUC: 0.5442 | 耗时: 0.03s
+2025-05-25 20:32:09,753 - INFO - 发现更好的模型 (Val AUC: 0.5442), 已保存到 'best_student_mlp_model.pth'
+2025-05-25 20:32:09,782 - INFO - Epoch 17/30 | Train Loss: 0.4128, Train Acc: 0.8375 | Val Loss: 0.7812, Val Acc: 0.6500, Val AUC: 0.5385 | 耗时: 0.03s
+2025-05-25 20:32:09,807 - INFO - Epoch 18/30 | Train Loss: 0.4143, Train Acc: 0.8187 | Val Loss: 0.7944, Val Acc: 0.6500, Val AUC: 0.5356 | 耗时: 0.03s
+2025-05-25 20:32:09,833 - INFO - Epoch 19/30 | Train Loss: 0.4126, Train Acc: 0.8500 | Val Loss: 0.7928, Val Acc: 0.6750, Val AUC: 0.5328 | 耗时: 0.03s
+2025-05-25 20:32:09,858 - INFO - Epoch 20/30 | Train Loss: 0.4079, Train Acc: 0.8375 | Val Loss: 0.7996, Val Acc: 0.6750, Val AUC: 0.5242 | 耗时: 0.02s
+2025-05-25 20:32:09,883 - INFO - Epoch 21/30 | Train Loss: 0.4019, Train Acc: 0.8688 | Val Loss: 0.8018, Val Acc: 0.6250, Val AUC: 0.5299 | 耗时: 0.03s
+2025-05-25 20:32:09,910 - INFO - Epoch 22/30 | Train Loss: 0.3900, Train Acc: 0.8625 | Val Loss: 0.8128, Val Acc: 0.6250, Val AUC: 0.5271 | 耗时: 0.03s
+2025-05-25 20:32:09,938 - INFO - Epoch 23/30 | Train Loss: 0.3992, Train Acc: 0.8250 | Val Loss: 0.8189, Val Acc: 0.6250, Val AUC: 0.5299 | 耗时: 0.03s
+2025-05-25 20:32:09,964 - INFO - Epoch 24/30 | Train Loss: 0.4114, Train Acc: 0.8313 | Val Loss: 0.8204, Val Acc: 0.6250, Val AUC: 0.5299 | 耗时: 0.03s
+2025-05-25 20:32:09,991 - INFO - Epoch 25/30 | Train Loss: 0.4128, Train Acc: 0.8187 | Val Loss: 0.8210, Val Acc: 0.6250, Val AUC: 0.5242 | 耗时: 0.03s
+2025-05-25 20:32:10,018 - INFO - Epoch 26/30 | Train Loss: 0.4048, Train Acc: 0.8562 | Val Loss: 0.8190, Val Acc: 0.6250, Val AUC: 0.5242 | 耗时: 0.03s
+2025-05-25 20:32:10,042 - INFO - Epoch 27/30 | Train Loss: 0.4057, Train Acc: 0.8562 | Val Loss: 0.8150, Val Acc: 0.6250, Val AUC: 0.5214 | 耗时: 0.02s
+2025-05-25 20:32:10,067 - INFO - Epoch 28/30 | Train Loss: 0.3929, Train Acc: 0.8375 | Val Loss: 0.8165, Val Acc: 0.6250, Val AUC: 0.5185 | 耗时: 0.02s
+2025-05-25 20:32:10,093 - INFO - Epoch 29/30 | Train Loss: 0.3926, Train Acc: 0.8562 | Val Loss: 0.8235, Val Acc: 0.6250, Val AUC: 0.5128 | 耗时: 0.03s
+2025-05-25 20:32:10,120 - INFO - Epoch 30/30 | Train Loss: 0.3834, Train Acc: 0.8500 | Val Loss: 0.8288, Val Acc: 0.6250, Val AUC: 0.5100 | 耗时: 0.03s
+2025-05-25 20:32:10,120 - INFO - --- 训练结束 --- 总耗时: 0.99s
+2025-05-25 20:32:10,120 - INFO - 最佳验证集 AUC: 0.5442
+2025-05-25 20:32:10,779 - INFO - 训练性能曲线图已保存到 'training_performance_curves.png'
