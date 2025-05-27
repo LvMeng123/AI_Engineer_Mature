@@ -51,7 +51,7 @@ except Exception as e:
 INPUT_LAYER = train_loader.dataset.tensors[0].shape[1]  # 输入层大小
 HIDDEN_LAYER1 = 128  # 第一个隐藏层大小 (可以调整)
 HIDDEN_LAYER2 = 64   # 第二个隐藏层大小 (可以调整)
-DROPOUT_RATE = 0.3   # dropout比率 (可以调整)
+DROPOUT_RATE = 0.4   # dropout比率 (可以调整)
 
 model = SEHE4678_Model(input_layer=INPUT_LAYER, 
                        hidden_layer1=HIDDEN_LAYER1, 
